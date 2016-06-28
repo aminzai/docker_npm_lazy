@@ -1,0 +1,7 @@
+main:
+    build: .
+    volumes:
+        - ./home:/root/
+    ports:
+        - "8088:8088"
+    #entrypoint: npm-lazy-mirror -b 0.0.0.0 -c /npm-data
